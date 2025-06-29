@@ -1,0 +1,48 @@
+.estudios {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  color: rgb(245, 239, 239);
+}
+.container_estudios {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  line-height: 1.5rem;
+  font-size: large;
+  margin: 0.5rem;
+}
+
+/* Celular (Pantallas pequeñas, hasta 767px) */
+@media (max-width: 767px) {
+  .estudios {
+    width: 100%;
+    font-size: small;
+    padding: 1rem;
+    color: rgb(245, 239, 239);
+    margin-top: 1rem;
+  }
+  .container_estudios {
+    width: 100%;
+    margin: 0rem;
+  }
+}
+
+/* Tableta (Pantallas medianas, entre 768px y 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .estudios {
+    width: 75%;
+  }
+}
+
+/*Escritorio (Pantallas anchas, 1024px y superiores) */
+@media (min-width: 1024px) {
+  .estudios {
+    width: 100%;
+  }
+  .container_estudios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
